@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>JIDR CAR</title>
+    <link rel="icon" href="./img/LOGO FINAL.png" type="img/png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <body>
+
+        <section id="banner"> 
+            <div class="banner-content">
+                <!-- Título do banner com JIDR em branco e LOCAR em #ff8000 -->
+                <h1>
+                    <span style="color: #fff;">JIDR</span>
+                    <span style="color: #ff8000;">LOCAR</span>
+                </h1>
+                <br>
+                <h3>
+                    <!-- O elemento <span> é usado para aplicar estilos específicos ao texto dentro do <h3> -->
+                    <span style="font-size: 1.5rem; font-weight: bold; color: white; font-family: 'Cursive', sans-serif;">
+                        <!-- Texto do título em branco, com fonte de tamanho 1.5rem, peso em negrito e estilo manuscrito -->
+                        Sua melhor rota começa aqui
+                    </span>
+                </h3>
+            </div>
+        </section>
+    
+    <header id="header">
+        <!-- Exibe a logomarca no topo do site -->
+    
+        <!-- Barra de navegação com links para diferentes seções da página -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li> <!-- Link para a página inicial -->
+                <li><a href="#solucoes">Soluçoes</a></li> <!-- Link para a seção de soluções -->
+                <li><a href="#sobre">Empresa</a></li> <!-- Link para a seção sobre a empresa -->
+                <li><a href="#Modelos">Modelos</a></li> <!-- Link para a seção de marcas -->
+                <li><a href="#meuacesso">Login</a></li> <!-- Link para a seção de contato -->
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Seção de banner (destaque) com título -->
+        <section id="solucoes">
+            <main>
+                <div class="imgVertical">
+                    <div></div>
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <div>
+                                <img src="./img/contrato.png">
+                            </div>
+                        </div>
+                        <h5>Contrato</h5>
+                        <p>Nosso modelo de contrato para contratação de veiculo</p>
+                        <button class="btn-saiba-mais" data-link="contrato.html">Saiba Mais</button>
+                    </li>
+    
+                    <li>
+                        <div>
+                            <div>
+                                <img src="./img/multas.png">
+                            </div>
+                        </div>
+                        <h5>Multas</h5>
+                        <p>Verifique aqui suas Multas com mais comodidade</p>
+                        <button class="btn-saiba-mais" data-link="contrato.html">Saiba Mais</button>
+                    </li>
+    
+                    <li>
+                        <div>
+                            <div>
+                                <img src="./img/guincho.png">
+                            </div>
+                        </div>
+                        <h5>Assistencias 24h</h5>
+                        <p>Verifique aqui sua Assistencias disponiveis</p>
+                        <button class="btn-saiba-mais" data-link="contrato.html">Saiba Mais</button>
+                    </li>
+        
+                    <div class="separador">
+                        <hr>
+                    </div>
+        
+                    <li>
+                        <div>
+                            <div>
+                                <img src="./img/rastreamento.png">
+                            </div>
+                        </div>
+                        <h5>Rastreamento</h5>
+                        <p>Proteção contínua com rastreamento 24 horas por dia</p>
+                        <button class="btn-saiba-mais" data-link="contrato.html">Saiba Mais</button>
+                    </li>
+    
+                    <li>
+                        <div>
+                            <div>
+                                <img src="./img/reserva.png">
+                            </div>
+                        </div>
+                        <h5>Veiculo Reserva</h5>
+                        <p>verifique os veiculos disponiveis de acordo sua contratação</p>
+                        <button class="btn-saiba-mais" data-link="contrato.html">Saiba Mais</button>
+                    </li>
+    
+                    <li>
+                        <div>
+                            <div>
+                                <img src="./img/seguro.png">
+                            </div>
+                        </div>
+                        <h5>Seguros</h5>
+                        <p>Proteja-se contra prejuízos envolvendo danos, o roubo e o furto do seu veiculo</p>
+                        <button class="btn-saiba-mais" data-link="contrato.html">Saiba Mais</button>
+                    </li>
+    
+                </ul>
+            </main>
+
+            <a href="https://wa.me/556195694222" class="whatsapp-float" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+                <!-- Link do Font Awesome (coloca dentro do <head> do HTML) -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        </section>
+        
+    <section class="cards">
+        <div class="cards-list">
+            <div class="card-item" data-card="hatchbacks" data-title="Hatchbacks"
+                data-description="Quer economia? Essa classe é pra você! Praticidade pro dia a dia!"
+                data-image="./images/Fiat_Argo_2017b_(cropped).jpg">
+                <img src="./images/polo apresentação (1).png" alt="Imagem do veículo fiat argo em coloração vermelha">
+                <h3>Hatchbacks</h3>
+                <p>Quer economia? Essa classe é pra você que quer praticidade pro dia a dia!</p>
+                <button class="btn-saiba-mais" onclick="openVehicleModal('hatchbacks')">Veja Mais</button>
+            </div>
+            <div class="card-item" data-card="sedans" data-title="Sedans"
+                data-description="Estilo e beleza é o que não falta nessa categoria! Velocidade e prazer é seu lema."
+                data-image="./images/Nuevo Nissan Sentra 2024 Facelift.jpg">
+                <img src="./images/nissan sentra apresentação (2).png"
+                    alt="Imagem do Veicúlo Corlla Híbrido em coloração branca">
+                <h3>Sedans</h3>
+                <p>Estilo é o que não falta nessa categoria! Velocidade e prazer é seu lema.</p>
+                <button class="btn-saiba-mais" onclick="openVehicleModal('sedans')">Veja Mais</button>
+            </div>
+            <div class="card-item" data-card="suvs" data-title="SUVs"
+                data-description="Suavidade é a palavra, tranquilidade para família com conforto incluso!"
+                data-image="./images/Jeep Compass Sport 1_3 2023.jpg">
+                <img src="./images/jeep compass apresentação.png" alt="Imagem do Jeep Compass em coloração cinza">
+                <h3>SUV´s</h3>
+                <p>Suavidade é a palavra, tranquilidade para família com conforto incluso!</p>
+                <button class="btn-saiba-mais" onclick="openVehicleModal('suvs')">Veja Mais</button>
+            </div>
+            <div class="card-item" data-card="caminhonetes" data-title="Caminhonetes"
+                data-description="Utilidade e capacidade a definem! Uma boa carroceria e força são seus traços!"
+                data-image="./images/Chevrolet Montana 2023.jpg">
+                <img src="./images/montana apresentação (2).png"
+                    alt="Imagem do Veicúlo Chevrolet Montana em coloração cinza chumbo">
+                <h3>Caminhonetes</h3>
+                <p>Utilidade e capacidade a definem! Uma boa carroceria e força são seus traços!</p>
+                <button class="btn-saiba-mais" onclick="openVehicleModal('caminhonetes')">Veja Mais</button>
+            </div>
+            <div class="card-item" data-card="eletricos" data-title="Elétricos"
+                data-description="Inovação e tecnologia! Pra você que ama se diferenciar e inovar essa é pra você!"
+                data-image="./images/BYD apresenta mais duas versões do Dolphin no Brasil.jpg">
+                <img src="./images/byd dolphin apresentação.png" alt="Imagem do Veicúlo BYD Dolphin em coloração preta">
+                <h3>Elétricos</h3>
+                <p>Inovação e tecnologia! Pra você que ama se diferenciar e inovar essa é pra você!</p>
+                <button class="btn-saiba-mais" onclick="openVehicleModal('eletricos')">Veja Mais</button>
+            </div>
+            <div class="card-item" data-card="premium" data-title="Premium"
+                data-description="Luxo, Esportividade e glamour! A adrenalina que você precisa e o luxo que você merece!"
+                data-image="./images/Novo BMW Série 3 é revelado em Paris.jpg">
+                <img src="./images/bmw 218i apresentação.png" alt="Imagem do Veicúlo BMW 320i azul em uma estrada">
+                <h3>Premium</h3>
+                <p>Luxo, Esportividade e glamour! A adrenalina que você precisa e o luxo que você merece!</p>
+                <button class="btn-saiba-mais" onclick="openVehicleModal('premium')">Veja Mais</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Modal de veículos -->
+    <div id="vehicle-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVehicleModal()">&times;</span>
+            <div class="vehicle-details">
+                <div class="arrow arrow-left" onclick="prevVehicle()">&#8249;</div>
+                <div class="vehicle-content">
+                    <h2 id="modal-title"></h2>
+                    <img id="modal-image" src="" alt="">
+                    <p id="modal-description"></p>
+                </div>
+                <div class="arrow arrow-right" onclick="nextVehicle()">&#8250;</div>
+            </div>
+        </div>
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+
+  
+
+    <script src="./script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            ScrollReveal().reveal('.header-page', {
+                duration: 1000,
+                origin: 'top',
+                distance: '50px'
+            });
+
+            ScrollReveal().reveal('.hero', {
+                duration: 1000,
+                origin: 'bottom',
+                distance: '50px',
+                reset: true
+            });
+
+            ScrollReveal().reveal('.cards-list .card-item', {
+                duration: 1000,
+                interval: 200,
+                origin: 'bottom',
+                distance: '50px',
+                reset: true
+            });
+
+            ScrollReveal().reveal('.footer-container', {
+                duration: 1000,
+                origin: 'bottom',
+                distance: '50px',
+                reset: true
+            });
+        });
+    </script>
+
+</body>
+<script>
+    function toggleContactItems() {
+        const headerPageMenu = document.querySelector('.header-page-menu');
+        headerPageMenu.classList.toggle('show-contact-items');
+    }
+</script>
+
+</html>

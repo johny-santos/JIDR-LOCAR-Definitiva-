@@ -1,0 +1,640 @@
+/* Estilos globais aplicados a todos os elementos */
+* {
+  /* Remove todas as margens de todos os elementos */
+  margin: 0px;
+
+  /* Remove todo o preenchimento interno de todos os elementos */
+  padding: 0px;
+
+  /* Define que o cálculo do tamanho dos elementos deve incluir a largura da borda e o preenchimento,
+         evitando problemas com o tamanho total do elemento */
+  box-sizing: border-box;
+
+  /* Define a fonte padrão como Arial para todos os elementos */
+  font-family: Arial, sans-serif;
+
+  /* Remove o contorno (outline) de elementos focados, como botões e inputs,
+         o que pode melhorar a estética, mas deve ser usado com cuidado para manter a acessibilidade */
+  outline: none;
+}
+
+/* Suaviza a rolagem da página ao navegar por links âncora */
+html {
+  scroll-behavior: smooth;
+}
+
+#banner {
+  /* Define um layout flexível para os elementos dentro da seção do banner */
+  display: flex;
+
+  /* Centraliza verticalmente os itens dentro do banner */
+  align-items: center;
+
+  /* Centraliza horizontalmente o conteúdo do banner */
+  justify-content: center;
+
+  /* Define a altura do banner como 40% da altura total da tela */
+  height: 40vh;
+
+  /* Aplica uma imagem de fundo ao banner (substitua pelo caminho da sua imagem específica) */
+  background-image: url("../img/capa\ 01.jpg");
+
+  /* Ajusta a imagem de fundo para cobrir todo o banner, mantendo a proporção */
+  background-size: cover;
+
+  /* Centraliza a posição da imagem de fundo no banner */
+  background-position: center;
+
+  /* Adiciona um preenchimento interno à esquerda de 20px, criando espaço entre o conteúdo e a borda esquerda */
+  padding-left: 20px;
+
+  /* Centraliza o texto */
+  text-align: center;
+}
+
+/* Estilos do título dentro do banner */
+#banner h1 {
+  /* Define a cor do texto como branca */
+  color: #fff;
+
+  /* Define o tamanho da fonte do título dentro do banner */
+  font-size: 2rem; /* Aumentei o tamanho para dar mais destaque */
+
+  /* Define o peso da fonte como bold (negrito) */
+  font-weight: bold;
+
+  /* Adiciona uma transição suave ao alterar o tamanho do texto */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de hover no título do banner */
+#banner h1:hover {
+  /* Quando o mouse passa sobre o título, ele aumenta 50% de tamanho */
+  transform: scale(1.5);
+}
+
+/* Estilo do conteúdo dentro do banner */
+.banner-content {
+  /* Adiciona uma margem à esquerda no conteúdo do banner */
+  margin-left: 0; /* Centraliza o conteúdo removendo o deslocamento da margem */
+}
+
+/* Estilos para o cabeçalho, alinhando o conteúdo com espaçamento e centralização flexível */
+
+#header {
+  /* Reduzindo o preenchimento interno */
+  padding: 5px 0;
+
+  /* Mantendo as demais configurações */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  left: 50;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Estilos para a lista de navegação dentro do cabeçalho */
+#header nav ul {
+  /* Remove os marcadores de lista */
+  list-style: none;
+
+  /* Remove margens e preenchimentos padrão */
+  margin: 0;
+  padding: 0;
+
+  /* Define um layout flexível para os itens de navegação */
+  display: flex;
+
+  /* Centraliza os itens de navegação */
+  justify-content: center;
+
+  /* Adiciona um espaço (gap) de 20px entre os itens da lista */
+  gap: 20px;
+}
+
+/* Estilos dos itens individuais da lista de navegação */
+#header nav ul li {
+  /* Exibe os itens de navegação em linha */
+  display: inline-block;
+
+  /* Define o tamanho da fonte dos itens de navegação */
+  font-size: 18px;
+
+  /* Centraliza o texto dos itens */
+  text-align: center;
+}
+
+/* Estilos para os links de navegação dentro dos itens de lista */
+#header nav ul li a {
+  /* Remove o sublinhado padrão dos links */
+  text-decoration: none;
+
+  /* Define a cor padrão dos links como preta */
+  color: black;
+
+  /* Adiciona um preenchimento interno ao redor do texto do link */
+  padding: 3px 40px;
+
+  /* Adiciona uma transição suave ao passar o mouse sobre os links */
+  transition: all 0.3s ease;
+}
+
+/* Estilos de hover para os links de navegação */
+#header nav ul li a:hover {
+  /* Adiciona um sublinhado ao link quando o mouse passa sobre ele */
+  text-decoration: underline;
+
+  /* Muda a cor do link para um laranja (#db5a0a) ao passar o mouse */
+  color: #db5a0a;
+}
+
+/* Adiciona uma margem superior ao conteúdo principal da página para evitar que ele sobreponha o cabeçalho */
+main {
+  margin-top: 100px; /* Adiciona uma margem de 100px no topo */
+}
+
+#solucoes {
+  padding: 40px;
+  text-align: center;
+}
+
+#solucoes p {
+  font-size: 12px;
+  width: 320px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#solucoes .verMais {
+  padding: 5px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #f47b04;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition-duration: 0.3s;
+}
+
+#solucoes .verMais:hover {
+  background-color: #f47b04;
+  color: rgb(235, 113, 19);
+}
+
+#solucoes main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#solucoes main .imgVertical {
+  width: 480px;
+  height: 520px;
+  border-radius: 5px;
+  border: 1px solid #f47b04;
+}
+
+#solucoes main .imgVertical div {
+  background-image: url("../img/carrogif.gif");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: -10px;
+  box-shadow: 10px 10px 10px #ebebeb;
+}
+
+#solucoes main ul {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  margin-left: 40px;
+}
+
+#solucoes main ul .separador {
+  grid-column: 1/4;
+  padding: 10px 0px;
+}
+
+#solucoes main ul .separador hr {
+  height: 0px;
+  border: none;
+  border-top: 1px solid #f47b04;
+}
+
+#solucoes main ul li h5 {
+  margin-top: 10px;
+}
+
+#solucoes main ul li p {
+  width: auto;
+  margin-top: 10px;
+}
+
+#solucoes main ul li button {
+  padding: 5px;
+  width: 100px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f47b04;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#solucoes main ul li {
+  padding: 10px;
+  display: inline-block;
+}
+
+#solucoes main ul li div {
+  padding: 2px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #db5a0a;
+  margin: auto;
+}
+
+#solucoes main ul li div div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+#solucoes main ul li div div img {
+  width: 20px;
+  padding: 0px;
+  border: none;
+}
+
+.btn-saiba-mais {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f47b04;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 120px; /* Define uma largura fixa para alinhamento */
+  text-align: center;
+  display: inline-block; /* Mantém os botões alinhados corretamente */
+}
+
+.btn-saiba-mais:hover {
+  background-color: #f47b04;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+  transform: scale(1.1);
+}
+/************************* Modal *************************/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 3px solid #db5a0a;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  /* Centralize the content */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.close {
+  color: #db5a0a;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 36px;
+  color: #ec9645;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow:hover {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/************************* Fim Modal *************************/
+
+/* CSS para animações */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.5s;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #db5a0a;
+  width: 80%;
+  max-width: 700px;
+  animation: slideIn 0.5s;
+  position: relative; /* Para posicionamento das setas */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.vehicle-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.vehicle-details.hide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* estilos das setas */
+.arrow {
+  cursor: pointer;
+  font-size: 2em;
+  color: #000;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Assegurar que fiquem acima do conteúdo */
+}
+
+.arrow:hover {
+  color: #888;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.vehicle-details {
+  position: relative;
+  padding: 20px; /* Ajustar para que as setas fiquem dentro do fundo */
+}
+
+.vehicle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vehicle-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*************************   Cards   *****************/
+.cards {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(209, 155, 121);
+  text-align: center;
+  color: var(--color-light);
+}
+
+.cards h2 {
+  margin-bottom: 30px;
+}
+
+.cards-list {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-item {
+  width: 300px;
+  padding: 20px;
+  background-color: rgb(251, 251, 251);
+  border: 1px solid rgb(185, 86, 20);
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+  color: #000;
+}
+
+.card-item:hover {
+  transform: scale(1.05);
+}
+
+.card-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-item h3 {
+  margin: 10px 0;
+}
+
+.card-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-item .btn {
+  margin-top: 10px;
+}
+
+/************************* Fim Cards *****************/
+@media (max-width: 1024px) {
+  #banner {
+    height: 30vh;
+  }
+
+  #banner h1 {
+    font-size: 1.75rem;
+  }
+
+  #solucoes main {
+    flex-direction: column;
+  }
+
+  #solucoes main .imgVertical {
+    width: 80%;
+    height: auto;
+  }
+
+  #solucoes main ul {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+  }
+
+  .botao-cotacao,
+  .card-item {
+    width: 80%;
+    margin: auto;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    font-size: 1.5em;
+  }
+
+  .vehicle-content img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner {
+    height: 25vh;
+  }
+
+  #banner h1 {
+    font-size: 1.5rem;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #solucoes main ul {
+    grid-template-columns: 1fr;
+  }
+
+  #solucoes main .imgVertical {
+    width: 90%;
+  }
+
+  .btn-saiba-mais,
+  .botao-cotacao,
+  .card-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    font-size: 1.2em;
+  }
+}
