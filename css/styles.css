@@ -94,6 +94,7 @@ html {
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  font-weight: bold;
 }
 
 /* Estilos para a lista de navegação dentro do cabeçalho */
@@ -320,47 +321,6 @@ main {
   transform: scale(1.1);
 }
 /************************* Modal *************************/
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 3px solid #db5a0a;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
-  position: relative;
-  text-align: left;
-  /* Centralize the content */
-  line-height: 1.6;
-  font-size: 16px;
-}
-
-.close {
-  color: #db5a0a;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .arrow {
   position: absolute;
   top: 50%;
@@ -368,103 +328,6 @@ main {
   color: #ec9645;
   cursor: pointer;
   transform: translateY(-50%);
-}
-
-.left-arrow {
-  left: 10px;
-}
-
-.right-arrow {
-  right: 10px;
-}
-
-.arrow:hover {
-  color: black;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-p {
-  margin: 10px 0;
-  font-size: 16px;
-}
-
-/************************* Fim Modal *************************/
-
-/* CSS para animações */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  animation: fadeIn 0.5s;
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #db5a0a;
-  width: 80%;
-  max-width: 700px;
-  animation: slideIn 0.5s;
-  position: relative; /* Para posicionamento das setas */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateY(-50px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-.vehicle-details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
-.vehicle-details.hide {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-/* estilos das setas */
-.arrow {
-  cursor: pointer;
-  font-size: 2em;
-  color: #000;
-  user-select: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10; /* Assegurar que fiquem acima do conteúdo */
 }
 
 .arrow:hover {
@@ -481,7 +344,7 @@ p {
 
 .vehicle-details {
   position: relative;
-  padding: 20px; /* Ajustar para que as setas fiquem dentro do fundo */
+  padding: 20px;
 }
 
 .vehicle-content {
@@ -495,7 +358,6 @@ p {
   height: auto;
 }
 
-/*************************   Cards   *****************/
 .cards {
   width: 100%;
   min-height: 100vh;
@@ -506,10 +368,11 @@ p {
   justify-content: center;
   background: rgb(209, 155, 121);
   text-align: center;
-  color: var(--color-light);
+  color: #fff;
 }
 
-.cards h2 {
+.cards h2,
+.cards h3 {
   margin-bottom: 30px;
 }
 
@@ -525,12 +388,13 @@ p {
 .card-item {
   width: 300px;
   padding: 20px;
-  background-color: rgb(251, 251, 251);
-  border: 1px solid rgb(185, 86, 20);
+  background-color: #fbfbfb;
+  border: 1px solid #b95614;
   border-radius: 10px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.5s;
   color: #000;
+  text-align: center;
 }
 
 .card-item:hover {
@@ -552,89 +416,4 @@ p {
 .card-item p {
   font-size: 14px;
   margin-bottom: 10px;
-}
-
-.card-item .btn {
-  margin-top: 10px;
-}
-
-/************************* Fim Cards *****************/
-@media (max-width: 1024px) {
-  #banner {
-    height: 30vh;
-  }
-
-  #banner h1 {
-    font-size: 1.75rem;
-  }
-
-  #solucoes main {
-    flex-direction: column;
-  }
-
-  #solucoes main .imgVertical {
-    width: 80%;
-    height: auto;
-  }
-
-  #solucoes main ul {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 0;
-  }
-
-  .botao-cotacao,
-  .card-item {
-    width: 80%;
-    margin: auto;
-  }
-
-  .arrow-left,
-  .arrow-right {
-    font-size: 1.5em;
-  }
-
-  .vehicle-content img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  #banner {
-    height: 25vh;
-  }
-
-  #banner h1 {
-    font-size: 1.5rem;
-  }
-
-  #header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  #header nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  #solucoes main ul {
-    grid-template-columns: 1fr;
-  }
-
-  #solucoes main .imgVertical {
-    width: 90%;
-  }
-
-  .btn-saiba-mais,
-  .botao-cotacao,
-  .card-item {
-    width: 100%;
-    text-align: center;
-  }
-
-  .arrow-left,
-  .arrow-right {
-    font-size: 1.2em;
-  }
 }
